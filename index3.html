@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merry Chít Mớt CNTT7</title>
+    <title>Merry Chít Mớt NThaoooNThaooo</</titl
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
@@ -101,27 +101,26 @@
             z-index: 100;
             font-family: sans-serif;
             pointer-events: none;
-            font-style: italic;
-        }
-    </style>
-</head>
-
-<body>
-
-    <div id="ui-layer">
-        <div class="guide">
-            ❤️ <b>2 Hands (Heart):</b> Love<br>
-            ✊ <b>Fist:</b> Tree &nbsp;|&nbsp; 🖐 <b>Open:</b> Explode &nbsp;|&nbsp; 👌 <b>Pinch:</b> Photo<br>
-            👍 <b>Thumb Up:</b> Gift &nbsp;|&nbsp; ☝️ <b>1 Finger:</b> Universe &nbsp;|&nbsp; &nbsp;|&nbsp; 🤘
-            <b>Rock:</b> Lion
-        </div>
-        <button id="btnStart" onclick="startSystem()">START MAGIC</button>
-    </div>
-    <div id="copyright">Nguyễn Tuấn Minh</div>
+      Minh</div>
 
     <div id="canvas-container"></div>
     <video class="input_video" style="display:none"></video>
-    <canvas id="camera-previeanh5.jpg',"camera-previe.jpg',const photoTextures = [];
+    <canvas id="camera-preview"></canvas>
+
+    <script>
+        const MUSIC_URL = "./audio.mp3";
+        let bgMusic = new Audio(MUSIC_URL);
+        bgMusic.loop = true; bgMusic.volume = 1.0;
+
+        const loader = new THREE.TextureLoader();
+        const photoFiles = [
+            './anh1.jpg',
+            './anh2.jpg',
+            './anh3.jpg',
+            './anh4.jpg',
+            './anh5anh5.jpg',
+        ];
+        const photoTextures = [];
         photoFiles.forEach((f, i) => photoTextures[i] = loader.load(f));
 
         function createCustomTexture(type) {
