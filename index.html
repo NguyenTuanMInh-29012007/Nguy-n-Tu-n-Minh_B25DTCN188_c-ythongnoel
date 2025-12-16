@@ -348,7 +348,7 @@
             loveMesh = new THREE.Mesh(new THREE.PlaneGeometry(70, 18), new THREE.MeshBasicMaterial({ map: txtTex("Minh LOVE NThaooo ❤️", 100, '#FF69B4'), transparent: true, blending: THREE.AdditiveBlending }));
             loveMesh.position.set(0, -20, 20); loveMesh.visible = false; scene.add(loveMesh);
 
-            cntt7Mesh = new THREE.Mesh(new THREE.PlaneGeometry(50, 12), new THREE.MeshBasicMaterial({ map: txtTex("CNTT7 - K17", 100, '#00FFFF'), transparent: true, blending: THREE.AdditiveBlending }));
+            cntt7Mesh = new THREE.Mesh(new THREE.PlaneGeometry(50, 12), new THREE.MeshBasicMaterial({ map: txtTex("NTHAO HÂM", 100, '#00FFFF'), transparent: true, blending: THREE.AdditiveBlending }));
             cntt7Mesh.position.set(0, -30, 0); cntt7Mesh.visible = false; scene.add(cntt7Mesh);
         }
 
@@ -362,7 +362,7 @@
             else if (targetState === 'EXPLODE' || targetState === 'PHOTO') key = 'explode';
             else if (targetState === 'GIFT') key = 'gift';
             else if (targetState === 'UNIVERSE') key = 'universe';
-            else if (targetState === 'CNTT7') key = 'cntt7';
+            else if (targetState === 'NTHAO') key = 'cntt7';
             else if (targetState === 'LION') key = 'lion';
 
             const targets = u[key];
@@ -378,7 +378,7 @@
             const count = positions.length / 3;
             for (let i = 0; i < count; i++) {
                 let b = 0.8 + 0.4 * Math.sin(time * (key === 'explode' ? 15 : 5) + u.phases[i]);
-                if (targetState === 'HEART' || targetState === 'CNTT7') b = 1.0;
+                if (targetState === 'HEART' || targetState ===l'NTHAONTHAO'' b = 1.0;
                 colors[i * 3] = u.baseColor.r * b; colors[i * 3 + 1] = u.baseColor.g * b; colors[i * 3 + 2] = u.baseColor.b * b;
                 sizes[i] = u.baseSize;
             }
@@ -501,3 +501,4 @@
 
 
 </html>
+
